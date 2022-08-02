@@ -1,0 +1,379 @@
+body{margin: 0; background: #F3F3F3; color: black; }
+body::-webkit-scrollbar-track {border-radius: 4px;}  body::-webkit-scrollbar {width: 6px;}  body::-webkit-scrollbar-thumb {border-radius: 4px;background: #f0f2f5;}
+body:hover::-webkit-scrollbar-thumb {background: #767880;}
+@font-face {  font-family: 'Montserrat_Light';  src: url("../fonts/montserrat/Montserrat-Thin.ttf");  }
+@font-face {  font-family: 'Montserrat_Light_Plus_Weight';  src: url("../fonts/montserrat/Montserrat-Light.ttf");  }
+@font-face {  font-family: 'Montserrat_Medium';  src: url("../fonts/montserrat/Montserrat-Medium.ttf");  }
+@font-face {  font-family: 'Montserrat_Bold';  src: url("../fonts/montserrat/Montserrat-Bold.ttf");  }
+@font-face {  font-family: 'Montserrat_Black';  src: url("../fonts/montserrat/Montserrat-Black.ttf");  }
+@font-face {  font-family: 'Futura PT Book';  src: url('../fonts/futura_pt_book.eot'); /* IE 9 Compatibility Mode */ src: url('../fonts/futura_pt_book.eot?#iefix') format('embedded-opentype'), /* IE < 9 */ url('../fonts/futura_pt_book.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/futura_pt_book.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */ url('../fonts/futura_pt_book.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/futura_pt_book.svg#futura_pt_book') format('svg'); /* Chrome < 4, Legacy iOS */  }  @font-face {  font-family: 'Futura PT Demi';  src: url('../fonts/futura_pt_demi.eot'); /* IE 9 Compatibility Mode */ src: url('../fonts/futura_pt_demi.eot?#iefix') format('embedded-opentype'), /* IE < 9 */ url('../fonts/futura_pt_demi.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/futura_pt_demi.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */ url('../fonts/futura_pt_demi.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/futura_pt_demi.svg#futura_pt_demi') format('svg'); /* Chrome < 4, Legacy iOS */  }  @font-face {  font-family: 'Futura PT Light';  src: url('../fonts/futura_pt_light.eot'); /* IE 9 Compatibility Mode */ src: url('../fonts/futura_pt_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */ url('../fonts/futura_pt_light.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/futura_pt_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */ url('../fonts/futura_pt_light.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/futura_pt_light.svg#futura_pt_light') format('svg'); /* Chrome < 4, Legacy iOS */  }
+.index_main_preloader{width: 100%; height: 100vh; background: #eeeeee; position: fixed; z-index: 999;}
+.preloader_hidden_zone_1{position: absolute; overflow: hidden;  margin: auto;width: 36vw; height: 20vw;  top: 0; left: 0; bottom: 0; right: 0;}
+.index_preloader_black_logo_hider{position: absolute; width: 36vw; height: 20vw; margin: auto;  top: 0; left: 0; bottom: 0; right: 0; background: black;transform: translateY(-20vw); z-index: 800; transition: .4s}
+.preloader_logo_black{position: absolute; width: 30vw; height: auto; margin: auto; top: 0; left: 0; bottom: 0; right: 0; opacity: 0; }
+.opacity_1_no_tran{opacity: 1}
+.index_black_preloader_zone{width: 100%; height: 0vh; background: black; position: absolute; bottom: 0; left: 0; z-index: 820;}
+.index_black_preloader_zone_full{height: 100vh; transition: .3s ease-in-out}
+.index_preloader_black_logo_hider_2{position: absolute; width: 36vw; height: 20vw; margin: auto;  top: 0; left: 0; bottom: 0; right: 0; background: white;transform: translateY(-20vw); z-index: 900}
+.index_preloader_black_logo_hider_hide{transform: translateY(0vw);  transition: .4s ease-in-out}
+.index_preloader_black_logo_hider_hide_2{transform: translateY(20vw);  transition: .2s ease-in-out}
+
+input, textarea, select {-webkit-appearance: none;}
+
+.main_main_area{background: url("../img/main_main_img.jpg"); padding-bottom: 4vw; background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100vh}
+.flex_level{display: flex; justify-content: space-between;}  html{scroll-behavior: smooth;}
+.logo_main{width: 20vw; height: auto; margin-left: 2vw;}  .logo_main_pages{width: 20vw; height: auto; margin-left: 2vw;  margin-top: 0vw}
+.main_main_area_top_info{color: white; font-size: 1.2vw; font-family: "Montserrat_Light"}  .flex_level_desktop{padding-top: 1.5vw}
+.main_main_area_icons{width: 3vw; height: auto; margin-left: .5vw}
+.main_main_area_icons:hover{opacity: .5}
+
+.main_main_area_menu{color: #E21D2F; font-size: 2vw; font-family: "Montserrat_Light_Plus_Weight";  text-transform: uppercase; }
+.main_main_area_menu_fixed{color: #E21D2F; font-size: 2vw; font-family: "Montserrat_Light_Plus_Weight";  text-transform: uppercase; position: fixed; right: 1vw; top: 2vw;z-index: 100}
+.main_main_area_menu_fixed:hover{cursor: pointer}
+.menu{height: 100vh; width: 100vw; background: #eeeeee;  position: fixed; z-index: 120; top: 0;display: none;opacity: 0;overflow: auto;  transition: .6s}
+.menu_show{ opacity: 1;  transition: .6s}
+.menu_close_button{position: absolute; left: 3vw; top: 2vw; cursor: pointer}
+.menu_logo{position: absolute; left: 23vw;top: 2vw; width: 16vw; height: auto; z-index: 122}
+.menu_link{ margin-top: .5vw}
+.menu_link_span_hover:hover{font-weight: 400; color: #E21D2F}
+.loading_word_index{animation-duration: .7s;animation-name: blink;animation-iteration-count: infinite;}
+.animate_link_background_on_page{position: fixed; height: 100vh; width: 100vw; background: #eeeeee; z-index: 400; top: 0; opacity: 1}
+.animate_link_background_on_page_hide{opacity: 0; transition: .6s}
+.animate_link_background{position: fixed; height: 100vh; width: 100vw; background: #eeeeee; z-index: 400; top: 0; display: none; opacity: 0 }
+.animate_link_background_show{transition: .4s; opacity: 1}  .menu_links_area{margin-left: 3vw; margin-top: 8vw}
+.courses_and_prices_block{position: absolute; top: 10vw; left: 31vw; border-left: .1vw solid black; display: none; padding-left: .5vw}
+.index_our_school_posters{width: 100vw; height: auto}
+.menu_closer_area{position: absolute; background: #eeeeee; width: 100%; height: 100%; z-index: 121}
+
+.rss_st_band{width: 288vw; transition: .6s ease-in-out}
+.rss_st_band_1_step{transform: translateX(-96vw); transition: .6s ease-in-out}
+.rss_st_band_2_step{transform: translateX(-192vw); transition: .6s ease-in-out}
+
+
+.rss_st_slide_st_3{margin-left: 3vw}
+.IPI_top_hide{transform: translateY(-100%); transition: .6s}
+.main_main_area_top_info_city{margin-left: 12vw}
+.city_list{display: none}
+.main_main_area_top_info_city:hover{cursor: pointer}
+.main_main_area_top_info_city:hover .city_list{display: block}
+.city_list_obj:hover{margin-left: 2vw}
+.main_main_area_top_info_phone{margin-top: .7vw; font-weight: 200}
+.main_main_area_top_info_phone_icons{margin-left: -8.5vw}
+.main_main_area_menu_content::after{width: 3vw; height: 3vw; background: #E21D2F; border-radius: 50%; content: "##";  margin-left: .5vw}
+.main_main_area_first_lesson{margin-right: 3vw; margin-top: -12vw}
+.main_main_area_first_lesson_text{text-align: right; font-size: 3vw; color: #FFF738; font-family: "Montserrat_Bold";}
+.header_all{font-family: "Montserrat_Black"; font-size: 7.6vw; color: black;}
+.header_all_w{font-family: "Montserrat_Black"; font-size: 7.6vw; color: white;   }
+.header_all_red{font-family: "Montserrat_Black"; font-size: 7.6vw; color: #E21D2F;   }
+.menu_photos{position: absolute;right: 5vw; top: 4vw ;width: 50vw;height: 30vw;}
+.menu_icon_area{margin-left: 3vw; width: 23vw; position: relative; z-index: 122}
+.menu_icons_options{width: 5vw; height: auto}
+.menu_icons_options:hover{opacity: .6}
+.menu_photos_main{background: url("../img/main_main_img.jpg")}
+.menu_photos_contacts{background: url("../img/contacts_background_head.png")}
+.menu_photos_about_school{background: url("../img/about_school_head_background.png")}
+.menu_photos_courses{background: url("../img/courses.png")}
+.menu_photos_teachers{background: url("../img/teachers_head.png")}
+.menu_photos_promotions{background: url("../img/index_main_preloader_image_background_6.jpg")}
+.menu_photos_reviews{background: url("../img/reviews.png")}
+.menu_photos_vacancy{background: url("../img/beach.jpg")}
+.index_what_is_rockstar_first_song{background: url("../img/index_what_is_rockstar_first_song.jpg"); height: 50vw; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center}
+.index_we_love_music_like_you{background: url("../img/index_we_love_music_like_you_n.jpg"); height: 50vw; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center; margin-top: 4vw}
+.index_top_concerts{background: url("../img/index_top_concerts_n.jpg"); height: 50vw; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center; margin-top: 4vw}
+.book_Futura{font-family: "Futura PT Book";font-size: 1.6vw;color: black;} .demy_Futura{font-family: "Futura PT Demi";font-size: 1.6vw;color: black;} .demy_Futura_plus_size{font-family: "Futura PT Demi";font-size: 2vw;color: black;}  .light_Futura{font-family: "Futura PT Light";font-size: 1.6vw;color: black;} .light_Futura_plus_size{font-family: "Futura PT Light";font-size: 2.5vw;color: black;}
+.book_Futura_plus_size{font-family: "Futura PT Book";font-size: 2.5vw;color: black;}
+.book_Futura_25{font-family: "Futura PT Book";font-size: 2.5vw;color: black;}
+.book_Futura_25_red{font-family: "Futura PT Book";font-size: 2.5vw;color: #E21D2F;}  a{text-decoration: none}
+.green_a_hover{background: #75E380; transition: .4s}
+.green_a_hover:hover{cursor: pointer; background: #e3e3e3; transition: .4s}
+.green_button_main_option{padding: 1vw 3vw; border-radius: 30px; background: #75E380}
+.green_button_main_option:hover{cursor: pointer; text-decoration: underline}
+.light_Montserrat{font-family: "Montserrat_Light"; font-size: 1.6vw;color: black;}  .bold_Montserrat{font-family: "Montserrat_Bold"; font-size: 1.6vw;color: black; }  .black_Montserrat{font-family: "Montserrat_Black"; font-size: 1.6vw;color: black; } .black_Montserrat_plus_size{font-family: "Montserrat_Black"; font-size: 2.5vw;color: black; }  .medium_Montserrat{font-family: "Montserrat_Medium"; font-size: 1.6vw;color: black;} .medium_Montserrat_plus_size{font-family: "Montserrat_Medium"; font-size: 2.5vw;color: black;}
+.light_Montserrat_w{font-family: "Montserrat_Light"; font-size: 1.6vw;color: white;}  .bold_Montserrat_w{font-family: "Montserrat_Bold"; font-size: 1.6vw;color: white; }  .black_Montserrat_w{font-family: "Montserrat_Black"; font-size: 1.6vw;color: white; }  .medium_Montserrat_w{font-family: "Montserrat_Medium"; font-size: 1.6vw;color: white;}
+.light_Montserrat_plus{font-family: "Montserrat_Light_Plus_Weight"; font-size: 1.6vw;color: black;}
+.light_Montserrat_plus_size{font-family: "Montserrat_Light_Plus_Weight"; font-size: 2vw;color: black;}
+.light_Montserrat_teacher_special{font-family: "Montserrat_Light_Plus_Weight"; font-size: 4vw;color: black;}
+.bold_Montserrat_plus_size{font-family: "Montserrat_Bold"; font-size: 2vw;color: black;}
+.index_black_Montserrat_special_selector{font-family: "Montserrat_Black"; font-size: 2.8vw; color: #E21D2F;text-decoration: underline}
+.index_black_red_down_line_special_selector{border-bottom: .2vw solid #E21D2F }
+.all_green_button{background: #75E380; padding: 1vw; border-radius: 30px}
+.all_green_button:hover{cursor: pointer; text-decoration: underline}
+.all_green_button_form{width: 15vw; height: 3vw; margin-top: 1vw; background: #75E380; border-radius: 10px; border: none; font-size: 1.2vw; font-weight: 400;}
+.all_green_button_form:hover{cursor: pointer; text-decoration: underline}
+.stroke{color: #F3F3F3;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;}
+.red_stroke{color: #F3F3F3!important;
+    text-shadow: 1px 0 1px #E21D2F,
+    0 1px 1px #E21D2F,
+    -1px 0 1px #E21D2F,
+    0 -1px 1px #E21D2F;}
+.extreme_teacher_word{padding: 0 1vw; right: -1vw; bottom: 9vw}
+.index_our_school_selector_left{background: url("../img/index_our_school_selector_left.jpg"); width: 15%; height: 50vw; background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative; transition: .5s}
+.index_our_school_selector_middle{background: url("../img/index_our_school_selector_middle.png"); width: 70%; height: 50vw; background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative; transition: .5s}
+.index_our_school_selector_right{background: url("../img/index_our_school_selector_right.png"); width: 15%; height: 50vw; background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative; transition: .5s}
+.index_our_school_selector_left_full{width: 70%; transition: .5s}
+.index_our_school_selector_left_small{width: 15%; transition: .5s}
+.index_our_school_selector_left_prev_text_hide{opacity: 0; transition: .7s; pointer-events: none}
+.index_our_school_selector_left_prev_text{transition: .2s}
+.index_our_school_selector_middle_prev_text{opacity: 0; transition: .2s; pointer-events: none}
+.index_our_school_selector_right_prev_text{transition: .2s;}
+.display_none{display: none}
+.display_block{display: block}
+.blacker{background: rgba(0, 0, 0, .4); width: 100%; height: 100%; position: absolute; opacity: 0; transition: .5s}
+.cursor_pointer_zone{width: 100%; height: 100%; position: absolute; opacity: 0; z-index: 10}
+.cursor_pointer_zone:hover{cursor: pointer}
+.hover_pointer:hover{cursor: pointer}
+.menu_link{font-size: 2vw}
+
+.index_you_learn_selector_cursor:hover{cursor: pointer}
+.index_you_learn_selector_active{font-family: 'Montserrat_Bold'; color: #E21D2F; text-decoration: underline}
+.you_learn_cards_sizes{width: 25vw;height: auto;}
+.index_our_school_selector_left_text{position: absolute; top: 0; opacity: 0; transition: .7s}
+.index_our_school_selector_middle_text{position: absolute; top: 0; transition: .7s}
+.index_our_school_selector_right_text{position: absolute; top: 0; opacity: 0; transition: .7s}
+.opacity_1{opacity: 1; transition: .7s}  .opacity_0{opacity: 0; transition: .7s}
+.index_directions_of_study{background: url("../img/index_lines.png"); background-size: cover; background-repeat: no-repeat; background-position: center center; }
+.index_directions_of_study_card_name{text-transform: uppercase; font-size: 3vw; text-align: center; color: white;padding-top: 18vw}
+.index_directions_of_study_keys_card{background: url("../img/index_direction_keys.jpg");background-size: cover; background-repeat: no-repeat; background-position: center center; width: 24vw; height: 30vw; position: relative}
+.index_directions_of_study_guitar_card{background: url("../img/index_direction_guitar.jpg");background-size: cover; background-repeat: no-repeat; background-position: center center;width: 24vw; height: 30vw; position: relative;}
+.index_directions_of_study_guitar_card_re{width: 24vw; height: 30vw; position: relative; background: url("../img/index_direction_guitar.jpg")}
+.index_directions_of_study_vocal_card{background: url("../img/index_direction_vocal.jpg");background-size: cover; background-repeat: no-repeat; background-position: center center; width: 24vw; height: 30vw; position: relative}
+.index_directions_of_study_vocal_card_o{background: url("../img/index_direction_vocal.jpg");background-size: cover; background-repeat: no-repeat; background-position: center center; width: 24vw; height: 30vw; position: relative}
+.index_directions_of_study_extreme_card{background: url("../img/index_direction_extreme.jpg");background-size: cover; background-repeat: no-repeat; background-position: center center; width: 24vw; height: 30vw; position: relative;}
+.index_directions_of_study_drums_card{background: url("../img/index_direction_drums.jpg");background-size: cover; background-repeat: no-repeat; background-position: center center; width: 24vw; height: 30vw; position: relative}
+.index_directions_of_study_keys_card_tape{background: url("../img/tape_1.jpg"); width: 17vw; height: 3vw;background-size: cover; background-repeat: no-repeat; background-position: center center; opacity: .7; margin-left: 4vw; top: -1.5vw;  position: absolute}
+.index_directions_of_study_keys_card_tape_2{background: url("../img/tape_2.jpg"); width: 7vw; height: 3vw;background-size: cover; background-repeat: no-repeat; background-position: center center; opacity: .7; margin-left: 8vw; top: -1.5vw;  position: absolute; transform: rotate(-40deg)}
+.direction_text_width{width: 24vw;}
+.courses_down_selection_link{position: absolute; width: 100%; height: 100%}
+.study_keys_card_link{margin-top: 2vw; text-align: center; display: block; position: relative; z-index: 30}
+.direction_text_area_options{height: 10vw; overflow: hidden}
+.position_relative{position: relative}
+.directions_of_study_bas_card{background: url("../img/bas_Guitar.jpg")}
+.directions_of_study_electro_card{background: url("../img/electro_guitar.jpg")}
+.directions_of_study_acoustic_card{background: url("../img/acoustic_guitar.jpeg")}
+.directions_of_study_card_options{width: 24vw; height: 30vw; position: relative;}
+.index_what_you_will_learning{background: url("../img/courses_net.png")}
+.index_what_you_will_learning_card_sizes{width: 25vw; padding-bottom: 3vw}
+.clip{position: absolute; width: 12vw; height: auto;}
+.form_with_girl{background: url("../img/form_with_girl.jpg"); height: 30vw; background-size: cover; background-repeat: no-repeat; background-position: center center; margin-top: 4vw}
+.teacher_card_ivanov_photo{background: url("../img/photo_Ivanov.jpg"); }
+.teacher_card_tarasov_photo{background: url("../img/photo_trasov.jpg");}  .teacher_card_tarasov_photo_2{background: url("../img/photo_trasov_2.jpg");}
+.teacher_card_kalachina_photo{background: url("../img/photo_kalachina.png")}  .teacher_card_kalachina_photo_2{background: url("../img/photo_kalachina_2.jpg")}
+.teacher_card_popov_photo{background: url("../img/photo_popov.jpg")}  .teacher_card_popov_photo_2{background: url("../img/photo_popov_2.jpg")}
+.teacher_card_portnov_photo{background: url("../img/photo_portnov_n.jpg")}  .teacher_card_portnov_photo_2{background: url("../img/portnov_ns_2.jpg")}
+.teacher_card_kuznecova_photo{background: url("../img/photo_kuznecova.jpg"); position: relative}  .teacher_card_kuznecova_photo_2{background: url("../img/photo_kuznecova_2.jpg"); position: relative}
+.teacher_card_karpova_photo{background: url("../img/photo_karpova.png")}  .teacher_card_karpova_photo_2{background: url("../img/photo_karpova_2.jpg")}
+.teacher_card_gilev_photo{background: url("../img/Gilev.jpg")}
+.teacher_card_nikolaeva_photo{background: url("../img/nikolaeva.jpg"); position: relative}  .teacher_card_nikolaeva_photo_2{background: url("../img/nikolaeva_2.jpg"); position: relative}
+.teacher_card_smirnova_photo{background: url("../img/smirnova_n.jpg")}  .teacher_card_smirnova_photo_2{background: url("../img/smirnova_n_2.jpg")}
+.rew_card_injelevskiy_photo{background: url("../img/rew_photo_1.jpg")}
+.rew_card_vetoshkina_photo{background: url("../img/rew_photo_2.jpg")}
+.teacher_card_lazo_photo{background: url("../img/lazo_n.jpg")}  .teacher_card_lazo_photo_2{background: url("../img/lazo_n_2.jpg")}
+.big_white_blure{position: absolute; bottom: 0; height: 24%; width: 100%; background: linear-gradient(to bottom, transparent, #F3F3F3 75%); }
+.paper_background{background: url("../img/bumaga.jpg"); position: relative}
+.paper_background_normal{background: url("../img/bumaga.jpg");}
+.teacher_card_size{width: 24vw; height: 30vw; margin-left: 2vw; display: block; position: relative}
+.teacher_card_info{background: url("../img/bumaga.jpg"); width: 28vw; height: 22vw; margin-top: -6vw; position: relative; overflow: hidden}
+.teacher_card_info_name{font-size: 3vw; text-align: center; color: black; padding-top: 2vw; line-height: 90%; position: relative; z-index: 4}
+.teacher_card_info_text{text-align: center; width: 90%; margin-left: auto; margin-right: auto; margin-top: 1.5vw; line-height: 90%}
+.teacher_card_info_blur{position: absolute; bottom: 0; height: 100%; width: 100%; background: linear-gradient(to bottom, transparent, #F1F1F1 85%); }
+.teacher_card_info_learn_more{display: block; color: #E21D2F; position: absolute; bottom: 2vw; width: 100%;  text-align: center; font-size: 2vw}
+.teacher_card_info_learn_more:hover{text-decoration: underline}
+.teacher_card_info_learn_more_2{display: block; color: #E21D2F; position: absolute; bottom: -1vw; width: 100%;  text-align: center; font-size: 2vw}
+.teacher_card_info_learn_more_2:hover{text-decoration: underline}
+.menu_number:hover{opacity: .7}
+
+.random_tape_1{position: absolute; top: 0;  background: url("../img/tape_1.jpg");width: 9vw; height: 5vw; transform: rotate(-40deg); left: -4vw; opacity: .7}
+.random_tape_2{position: absolute; top: -2vw; left: 6vw; background: url("../img/tape_2.jpg");width: 8vw; height: 4vw; opacity: .7 }
+.random_tape_3{position: absolute;  background: url("../img/tape_2.jpg");width: 10vw; height: 4vw; right: -4vw; top: -2vw; transform: rotate(90deg); opacity: .7 }
+.random_tape_4{position: absolute;  background: url("../img/tape_1.jpg");width: 10vw; height: 4vw; right: -4vw; top: 0vw; transform: rotate(40deg); opacity: .7 }
+.random_tape_5{position: absolute; top: -2vw; left: 6vw; background: url("../img/tape_1.jpg");width: 8vw; height: 4vw; opacity: .7 }
+
+
+.learn_more_plus_link_plus{font-size: 3vw; background: black; text-align: center; color: white; width: 3.5vw; margin-left: auto; margin-right: auto; border-radius: 50%; display: block; margin-top: -5vw}
+.learn_more_plus_link_plus:hover{background: #2f2f2f}
+.microphone_paper{position: absolute; width: 24vw; height: auto}
+.learn_more_plus_link{position: relative; z-index: 10; left: 0;right: 0;margin-left: auto; margin-right: auto; }
+select:hover{cursor: pointer}
+.rockstar_circle{width: 10vw; height: auto; position: absolute; left: 5vw; top: 3vw}
+.about_school_rockstar_school_is_paper{width: 45%; padding: 2vw; margin-left: 30%}  .price_png{width: 80vw; height: auto; margin-left: 12vw}
+.promotions_area{width: 100vw; height: 100vh; background: url("../img/promotions_back.svg");overflow: hidden}
+.promotions_head{width: 60vw; height: auto; margin-top: 6vw; margin-left: 20vw}
+.promotion_card{width: 17vw; height: auto; transition: .3s}
+.promotion_card:hover{transform: scale(1.1); transition: .3s; cursor: pointer}
+.promotion_content_options{width: 54vw; height: auto; margin-left: 23vw; margin-top: 9vw; -moz-box-shadow:0 0 10vw #ffffff; -webkit-box-shadow:0 0 10vw #ffffff; box-shadow:0 0 10vw #ffffff; position: relative; z-index: 11}
+.popup{ width: 100%; height: 100vh; position: fixed; z-index: 80; transition: .4s}
+.popup_content{position: relative; margin-top: 4vw; z-index: 82; background: red; display: inline-block; margin-left: 35vw}
+.popup_close_area{ width: 100%; height: 100vh;position: absolute; background: rgba(0, 0, 0, 0.3); top: 0; left: 0; z-index: 81}
+.popup_close_area:hover{cursor: pointer}
+.popup_content_paper{position: relative; margin-left: auto; margin-right: auto; width: 30vw; padding-top: 5vw; padding-bottom: 5vw; -moz-box-shadow:0 0 10vw #ffffff; -webkit-box-shadow:0 0 10vw #ffffff; box-shadow:0 0 10vw #ffffff;}
+.popup_input_options{width: 20vw}
+.star_red{width: 8vw;height: auto; top: -4vw; left: -3vw; }
+.star_red_2{width: 8vw;height: auto; bottom: -3vw; right: -4vw; }
+.slider_wrapper{width: 100%;  overflow: hidden}
+.slider{ height: 40vw; width: 350vw; transition: .4s; }
+.slider_1_page{background: url("../img/index_slider_1.jpg");}
+.slider_2_page{background: url("../img/index_slider_2_n.jpg");}
+.slider_3_page{background: url("../img/index_slider_3.jpg");}
+.slider_4_page{background: url("../img/index_slider_4.jpg");}
+.slider_5_page_options{width: 30vw;background: url("../img/back_arrow_n.svg")}
+.slider_step_1{transform: translateX(-80vw)}
+.slider_step_2{transform: translateX(-160vw)}
+.slider_step_3{transform: translateX(-240vw)}
+.slider_page_arrow_hover_right_1:hover{cursor: url("../img/imgonline-com-ua-Resize-AWDa4XW4gdc.png"), pointer;   position: absolute; }
+.slider_page_arrow_hover_right_2:hover{cursor: url("../img/imgonline-com-ua-Resize-AWDa4XW4gdc.png"), pointer; position: absolute; }
+.slider_page_arrow_hover_right_3:hover{cursor: url("../img/imgonline-com-ua-Resize-AWDa4XW4gdc.png"), pointer;  position: absolute; }
+.slider_page_arrow_hover_right_4:hover{cursor: url("../img/imgonline-com-ua-Resize-AWDa4XW4gdc.png"), pointer;  position: absolute; }
+.make_your_group_png{ width: 50%; height: auto}
+.Olia_form{ position: relative;overflow: hidden;  background: linear-gradient(to bottom right, #C4C4C4, #F9F9F9); height: 40vw; margin-top: 7vw}
+.Olia_form_back_ground{position: absolute; right: -2vw;top: -10vw; width: 70vw; height: 80vw; background: linear-gradient(to bottom left, #F30243, #3D029E); transform: rotate(10deg)}
+.Olia_form_content{ position: relative; z-index: 4; margin-left: 43vw; margin-top: 3vw}
+.Olia_form_content_headline{font-size: 5.5vw; color: white; text-shadow: 0 0 10px white,0 0 20px white,0 0 30px white,0 0 40px white;}
+.Olia_form_content_text{font-size: 2.2vw; color: white; text-shadow: 0 0 10px white,0 0 20px white,0 0 30px white,0 0 40px white;}
+.teacher_card{position: relative}
+.Embedded_link_100{position: absolute; width: 100%; height: 100%; z-index: 2;}
+.index_events{background: url("../img/beach.jpg"); height: 40vw; margin-top: 3vw}
+.container_80{width: 80%; margin-left: auto; margin-right: auto}
+.container_90{width: 90%; margin-left: auto; margin-right: auto}
+.container_50{width: 50%; margin-left: auto; margin-right: auto}
+.events_content{background: #cbcbcb;  position: relative}
+.index_events_link{padding: .5vw; border: black solid .1vw; border-radius: 20px}
+.index_events_link:hover{background: black; color: white}
+.events_poster{width: 25vw; height: auto}
+footer{background: url("../img/footer.jpg");padding-top: 2vw; padding-bottom: 2vw}
+.white_down_line_90{width: 90%; margin-left: auto; margin-right: auto; border-bottom: .1vw solid white; margin-top: 1vw}
+.footer_content{text-align: center; color: white; margin-top: 2vw}  .footer_link{margin-right: 1vw} .footer_link:hover{opacity: .5}
+.footer_icons_area{width: 44vw; margin-left: auto; margin-right: auto}
+.footer_icons_options{width: 7vw; height: auto}
+.footer_icons_options:hover{opacity: .5}
+.step_up_22{margin-top: -2.2vw}  .step_up_3{margin-top: -3vw} .step_down_5{margin-top: 5vw}  .step_up_1{margin-top: -1vw}  .step_down_3{margin-top: 3vw}  .step_down_2{margin-top: 2vw}  .step_down_10{margin-top: 10vw}
+.standard_22_margin{ margin-left: 2vw; margin-top: 2vw}
+.standard_22_margin_right{ margin-right: 2vw; margin-top: 2vw}  .step_down_4{margin-top: 4vw}
+.st_r_5{margin-left: 5vw}  .st_r_8{margin-left: 8vw}
+.rss_st_ar_r{position: absolute; right: .3vw;top: 13vw; width: 4vw; height: auto; z-index: 10}
+.rss_st_ar_r:hover{opacity: .7; cursor: pointer}
+.rss_st_slide{width: 96vw}
+.olia_photo{background: url("../img/olia.jpg"); height: 50vw; width: 40%}
+.pages_crumbs{margin-left: 3vw; margin-top: 2vw}
+.crumbs_options{font-size: 2vw}
+.crumbs_down_borders{border-bottom: .1vw solid black}  .crumbs_options:hover{color: #E21D2F}  .font_size_4{font-size: 4vw}  .font_size_2{font-size: 2vw}
+.gray_color{color: gray}
+.rss_st_1_slide_1_ph{background: url("../img/rss_story/1.jpg")}
+.rss_st_1_slide_2_ph{background: url("../img/rss_story/2.jpg")}
+.rss_st_1_slide_3_ph{background: url("../img/rss_story/3.jpg")}
+.rss_st_1_slide_4_ph{background: url("../img/rss_story/4.jpg")}
+.rss_st_1_slide_5_ph{background: url("../img/rss_story/5.jpg")}
+.rss_st_1_slide_6_ph{background: url("../img/rss_story/6.jpg")}
+.vw_container_2{width: 96vw; margin-left: auto; margin-right: auto; }
+.position_absolute{position: absolute}
+.net_about_school{width: 60vw; height: auto; right: 0; z-index: 4;}
+.cvart_1{left: 2vw; width: 50vw; height: auto; top: 3vw; z-index: 4;}
+.cvart_posters{right: 10vw; width: 35vw; height: auto; top: 1vw; z-index: 4;}
+.cvart_paper_back{width: 80vw; z-index: 1; transform: rotate(20deg); height: 45vw; right: -10vw; top: 20vw;}
+.cvart_2{right: 7vw; width: 60vw; height: auto; top: 61vw; z-index: 3;}
+.cvart_headers{top: 50vw; left: 15vw}
+.cvart_text_1{z-index: 5; right: 20vw; top: 31vw}  .cvart_text_2{z-index: 5; top: 85vw; left: 5vw}
+.step_down_1{margin-top: 1vw}
+.cvart_vector_1{width: 6vw; height: auto; z-index: 5; right: 17vw; top: 27vw}
+.cvart_vector_2{width: 20vw; height: auto; z-index: 5; left: 14vw; top: 115vw}
+.cvart_paper_back_2{width: 80vw; z-index: 1; transform: rotate(-5deg); height: 42vw; right: -10vw; top: 130vw;}
+.otch_headers{top: 135vw; right: 5vw}
+.otch_photo{width: 60vw; height: auto; top: 133vw; left: -5vw; z-index: 4}
+.otch_rock_paper{top: 165vw;width: 60vw; height: auto; right: 5vw; z-index: 5; }
+.about_school_we_help_card{width: 48vw; height: auto; left: 3vw}
+.about_school_we_help_text{left: 3vw; top: 24vw}
+.about_school_we_help_photo_2{width: 23vw; height: auto; top: 12vw; right: 13vw}
+.about_school_we_help_photo{width: 80vw; height: auto; top: 30vw; right: 6vw}
+.courses_net{width: 80vw; position: absolute; height: auto; left: 10vw}
+.gray_playsholder{width: 45vw; height: 20vw; background: gray}
+.rss_st_s_size{width: 45vw; height: 20vw;}
+.pages_head_title_sizes{font-size: 9vw; color: white;margin-left: 4vw}
+.slider_about_school_text{width: 45vw; margin-top: 1.5vw}
+.pages_head_title{font-size: 9vw; color: white; margin-left: 4vw; margin-top: 15vw}
+.pages_head_title_about_school{font-size: 9vw; color: white; margin-left: 4vw; margin-top: 12vw}
+.pages_head_title_courses{font-size: 9vw; color: white; margin-left: 4vw; margin-top: 18vw}
+.pages_head_subtitle_UP{font-size: 7vw; color: white; margin-left: 4vw; margin-top: 15vw}
+.pages_head_title_courses_UP{font-size: 9vw; color: white; margin-left: 4vw; }
+.pages_head_subtitle{font-size: 3vw; color: white; margin-left: 4vw; margin-top: -2.2vw}
+.contacts_up_line{width: 100%; border-top: .1vw solid black}
+.map_size{position: relative; height: 30vw; margin-top: 4vw}  .text_center{text-align: center}
+.courses_description_width{width: 37%}  .courses_description_width_2{width: 45%}  .hidden_price_height{height: 50vw}
+.courses_description_star{top: 0; left: -3vw; width: 5vw; height: auto}
+.vocal_desription_first_photos{width: 50vw; height: auto; right: -5vw; top: 5vw}
+.vocal_desription_second_photos{ width: 37vw;height: auto}
+.courses_feedback_form{background: url("../img/bumaga.jpg"); right: 5vw; top: 90vw; padding: 1vw 1vw  1vw}
+.courses_feedback_form_2{background: url("../img/bumaga.jpg"); right: 5vw; top: 82vw; padding: 1vw 1vw  1vw}
+.courses_feedback_form_3{background: url("../img/bumaga.jpg"); right: 5vw; top: 84vw; padding: 1vw 1vw  1vw}
+.courses_feedback_form_5{background: url("../img/bumaga.jpg"); right: 5vw; top: 87vw; padding: 1vw 1vw  1vw}
+.courses_feedback_form_4{background: url("../img/bumaga.jpg"); right: 5vw; top: 79vw; padding: 1vw 1vw  1vw}
+.courses_feedback_form_6{background: url("../img/bumaga.jpg"); right: 5vw; top: 20vw; padding: 1vw 1vw  1vw}
+.courses_description_class_photo{width: 40vw; height: auto; top: 0; right: 0}
+.pages_head_contacts_background{background: url("../img/contacts_background_head.png")}
+.about_school_head_background{background: url("../img/about_school_head_background.png")}
+.reviews_head_background{background: url("../img/reviews.png")}
+.courses_head_background{background: url("../img/courses.png")}
+.courses_vocal_head_background{background: url("../img/courses_vocal_head.jpg")}
+.courses_drums_head_background{background: url("../img/courses_drums_n.jpg")}
+.courses_keys_head_background{background: url("../img/courses_keys_n.jpg")}
+.courses_guitar_head_background{background: url("../img/courses_guitar.jpg")}
+.teachers_head_background{background: url("../img/teachers_head.png")}
+.teachers_search_wrapper{background: url("../img/svg_net.svg"); padding-top: 1vw; padding-bottom: 2vw}
+.pages_head_options{height: 60vw; background-size: cover; background-repeat: no-repeat; background-position: center center}
+.pages_head_options_keys{height: 60vw; background-size: cover; background-repeat: no-repeat; background-position: center 100%}
+.courses_feedback_form_in{background: #E97B85; padding: 1vw}
+.margin_center{margin-left: auto; margin-right: auto}
+.quiz{overflow: auto; border-radius: 20px; height: 40vw; width: 60vw; margin-left: auto; margin-right: auto; border: .1vw solid black; margin-top: 4vw; background: white; position: relative; box-shadow: 1vw 1vw 1vw gray}
+.quiz::-webkit-scrollbar-track {border-radius: 4px;}
+.quiz::-webkit-scrollbar {width: 6px;}
+.quiz::-webkit-scrollbar-thumb {border-radius: 4px;background: #c4c4c4;}
+.quiz:hover::-webkit-scrollbar-thumb {background: #767880;}
+.quiz_dot{ width: 1.5vw; height: 1.5vw; background: white; border: .1vw solid black; border-radius: 50% }
+.quiz_text{  margin-left: 1vw; margin-top: -.2vw}
+.display_flex{display: flex}
+.display_inline_block{display: inline-block}
+.padding_dot_5{padding: .5vw}
+.quiz_1_quest_selected{border: .1vw solid black; border-radius: 20px; }
+.quiz_dot_selected{background: #E21D2F}
+.quiz_success_step_1{position: sticky; left: 0; top: 0; height: 40vw; width: 100%; background: white; transition: .5s; z-index: 1}
+.quiz_success_step_2{position: sticky; left: 0; top: 0; height: 40vw; width: 100%; background: url("../img/courses_guitar.jpg"); transition: .5s; z-index: 3}
+.quiz_span_super_hide{transform: translateY(100%); transition: 1s}  .quiz_span_super{display: block; }
+.teacher_open_info_back{position: fixed;overflow: hidden; width: 100%; height: 100vh;  z-index: 30; transition: .4s; background: rgba(0,0,0,0.9)}
+.teacher_open_container{overflow: auto; height: 100vh; width: 100%; position: relative;}
+.teacher_full_info_photo_options{margin-left: auto; margin-right: auto; width: 30vw; height: 40vw; margin-top: 4vw}
+.teacher_open_info_content{padding-bottom: 5vw; margin-left: auto; margin-right: auto;  position: relative; z-index: 31; }
+.background_net{background: url("../img/svg_net.svg")}
+[data-aos="accordion"] { transform: translateY(100%)  }  [data-aos="accordion"].aos-animate { transform: translateY(0%) }
+.inst_widget{width: 60vw; margin-left: auto; margin-right: auto; margin-top: 5vw}
+.inst_logo{width: 24vw; height: auto}
+.teacher_full_close{margin-top: -3vw}
+.inst_widget_link{background: #0095F6; padding: 1vw; border-radius: 20px; margin-top: 5vw}
+.inst_widget_link:hover{text-decoration: underline}
+.inst_block{display: block; width: 19vw; height: 19vw;}
+
+.inst_block:hover{filter: grayscale(100%)}
+.inst_block_back_1{background: url("../img/inst_block_back_1.png")}  .inst_block_back_2{background: url("../img/inst_block_back_2.png")}  .inst_block_back_3{background: url("../img/inst_block_back_3.png")}  .inst_block_back_4{background: url("../img/inst_block_back_4.png")}  .inst_block_back_5{background: url("../img/inst_block_back_5.png")}  .inst_block_back_6{background: url("../img/inst_block_back_6.png")}  .inst_block_back_7{background: url("../img/inst_block_back_7.png")}  .inst_block_back_8{background: url("../img/inst_block_back_8.png")}  .inst_block_back_9{background: url("../img/inst_block_back_9.png")}
+.filter_grayscale{filter: grayscale(100%)}
+.background_options{background-size: cover; background-repeat: no-repeat; background-position: center center}
+.background_fixed{background-attachment: fixed}
+.slider_options{ width: 80vw; height: 40vw; position: relative}
+.color_red{color: #E21D2F}
+.color_white{color: white}
+.hidden_overflow{overflow: hidden}
+.padding_bottom_2_vw{padding-bottom: 2vw}
+.padding_top_2_vw{padding-top: 2vw}
+.desktop_version{display: block}
+.mobile_version{display: none}
+
+@media screen and (max-width: 600px){
+    .desktop_version{display: none}
+    .mobile_version{display: block}
+    .header_all{font-family: "Montserrat_Black"; font-size: 12vw; color: black;}
+
+
+    .background_fixed{background-attachment: scroll}
+}
+
+
